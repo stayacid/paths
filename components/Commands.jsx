@@ -1,13 +1,11 @@
 
 import React from 'react'
-import { CarbonAd } from 'blk'
 import pathast from 'path-ast'
 import commands from 'path-ast/lib/keys'
 import roundAst from '../util/round-ast'
 import findCenter from '../util/find-center'
 import Command from './Command.jsx'
 import Button from './Button.jsx'
-import { colors, scale } from '../data'
 
 // Commands Palette
 //  - Stepper
@@ -54,9 +52,9 @@ class Commands extends React.Component {
       container: {
         position: 'relative',
         boxSizing: 'border-box',
-        height: 'calc(100vh - 48px)',
         paddingTop: scale[3],
         paddingBottom: 128,
+        flex: '0 0 40%'
       },
       inner: {
         overflow: 'auto',
@@ -101,9 +99,6 @@ class Commands extends React.Component {
               + Add Point
             </Button>
           </div>
-        </div>
-        <div style={s.ad}>
-          <CarbonAd />
         </div>
       </div>
     )

@@ -1,6 +1,5 @@
 
 import React from 'react'
-import Header from './Header.jsx'
 import Svg from './Svg.jsx'
 import Toolbar from './Toolbar.jsx'
 
@@ -21,7 +20,7 @@ class Canvas extends React.Component {
     let styles = {
       container: {
         position: 'relative',
-        height: 'calc(100vh - 48px)',
+        flex: '0 0 60%'
       },
       viewport: {
         position: 'absolute',

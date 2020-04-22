@@ -7,7 +7,6 @@ import { colors } from '../data'
 import Anchor from './Anchor'
 import CurrentAnchor from './CurrentAnchor'
 import CurveHandles from './CurveHandles'
-import PathHandles from './PathHandles'
 
 class Handles extends React.Component {
 

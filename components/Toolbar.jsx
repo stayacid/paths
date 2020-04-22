@@ -1,7 +1,5 @@
 
 import React from 'react'
-import pathast from 'path-ast'
-import { TweetButton, GithubButton } from 'blk'
 import makeSvg from '../util/make-svg'
 import Button from './Button.jsx'
 import LinkBtn from './LinkBtn.jsx'

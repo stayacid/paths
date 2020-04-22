@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { scale, colors } from '../data'
+import { scale } from '../data'
 
 class CompactInput extends React.Component {
 

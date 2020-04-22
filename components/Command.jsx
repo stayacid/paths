@@ -1,14 +1,10 @@
 
 import React from 'react'
 import commands from 'path-ast/lib/keys'
-import commandNames from '../util/command-names'
 import previousKey from '../util/get-previous-key'
 import Select from './Select'
-import Input from './Input'
 import CompactInput from './CompactInput'
 import Button from './Button'
-import Table from './Table'
-import Pad from './Pad'
 
 class Command extends React.Component {
 

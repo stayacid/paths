@@ -1,13 +1,11 @@
 
 import React from 'react'
-import { throttle, cloneDeep } from 'lodash'
+import { cloneDeep } from 'lodash'
 import pathast from 'path-ast'
-import { Grid, Cell } from 'rgx'
-import Header from './Header'
 import Canvas from './Canvas'
 import Commands from './Commands'
 import UrlHistory from './UrlHistory'
-import css from '../app.css'
+import css from '../app.css' // required!
 
 class App extends React.Component {
 
@@ -100,32 +98,27 @@ class App extends React.Component {
     let props = this.props
     let style = {
       color: 'white',
-      backgroundColor: props.colors.dark
+      backgroundColor: props.colors.dark,
+      display: 'flex',
+      height: '100vh'
     }
 
     return (
       <div style={style}
         onKeyDown={this.handleKeyDown.bind(this)}>
-        <Header />
-        <Grid>
-          <Cell min={320}>
-            <Canvas
-              {...props}
-              {...state}
-              toggle={this.toggle}
-              updateAst={this.updateAst}
-              selectPoint={this.selectPoint}
-              updateState={this.updateState}
-              handleChange={this.handleChange} />
-          </Cell>
-          <Cell min={256} max={320}>
-            <Commands
+          <Canvas
+            {...props}
+            {...state}
+            toggle={this.toggle}
+            updateAst={this.updateAst}
+            selectPoint={this.selectPoint}
+            updateState={this.updateState}
+            handleChange={this.handleChange} />
+          <Commands
               {...props}
               {...state}
               selectPoint={this.selectPoint}
               updateAst={this.updateAst} />
-          </Cell>
-        </Grid>
         <UrlHistory
           {...props}
           {...state}

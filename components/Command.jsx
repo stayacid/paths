@@ -101,29 +101,20 @@ class Command extends React.Component {
 
     let s = {
       div: {
-        //fontFamily: 'monospace',
-        //paddingTop: scale[1],
         marginBottom: scale[1],
         color: active ? colors.blue : 'inherit'
-        // boxShadow: active ? 'inset 0 0 0 2px ' + colors.blue : null
-      },
-      grid: {
-        // marginLeft: -scale[2],
-        // marginRight: -scale[2],
       },
       cell: {
         display: 'inline-block',
         verticalAlign: 'middle',
         boxSizing: 'border-box',
         width: '25%',
-        //paddingLeft: scale[0],
-        //paddingRight: scale[0],
       }
     }
 
     return (
       <div style={s.div}>
-        <div style={s.grid}>
+        <div>
           <div style={s.cell}>
             <Select
               {...props}
@@ -176,4 +167,3 @@ class Command extends React.Component {
 }
 
 export default Command
-

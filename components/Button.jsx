@@ -18,8 +18,6 @@ class Button extends React.Component {
       padding: scale[1],
       boxSizing: 'border-box',
       border: 0,
-      // border: '1px solid',
-      // borderRadius: 2,
       color: props.active ? colors.blue : 'inherit',
       backgroundColor: props.active ? colors.darken[3] : 'transparent',
       borderColor: props.active ? 'transparent' : colors.darken[3],
@@ -38,4 +36,3 @@ class Button extends React.Component {
 }
 
 export default Button
-

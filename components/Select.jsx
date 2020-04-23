@@ -5,7 +5,7 @@ class Select extends React.Component {
 
   render () {
     let props = this.props
-    let { scale, colors } = props
+    let { scale } = props
     let s = {
       div: {
         marginBottom: props.mb ? 12 : null
@@ -29,8 +29,6 @@ class Select extends React.Component {
         borderRadius: 0,
         color: 'inherit',
         backgroundColor: 'transparent',
-        //backgroundColor: colors.darken[3],
-        //WebkitAppearance: 'none',
       }
     }
 

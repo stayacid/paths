@@ -117,7 +117,6 @@ class Handles extends React.Component {
       const yN = (y - cy) / (transformStart.y - cy)
       const n = (Math.abs(xN) >= Math.abs(yN) ? xN : yN)
       if (isFinite(n) && n > 0) {
-        // newAst.scale(n, c, c)
         newAst.scale(n)
         updateState({
           transformStart: { x, y }

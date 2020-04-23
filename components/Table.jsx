@@ -40,7 +40,6 @@ class Cell extends React.Component {
     let s = {
       display: 'table-cell',
       verticalAlign: 'middle',
-      // whiteSpace: props.nowrap ? 'nowrap' : null,
       whiteSpace: 'nowrap',
       width: props.fill ? '100%' : null,
       paddingLeft: props.pad ? scale[0] : 0,

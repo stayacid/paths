@@ -12,10 +12,7 @@ class CompactInput extends React.Component {
         display: 'table',
         width: '100%',
         marginBottom: props.mb ? 4 : null,
-        //backgroundColor: colors.darken[3],
         backgroundColor: 'transparent',
-        // borderColor: colors.lighten[3],
-        // borderWidth: 1,
         border: 'none',
         borderRadius: 2,
       },
@@ -26,10 +23,8 @@ class CompactInput extends React.Component {
         paddingLeft: 8,
         paddingRight: 4,
         whiteSpace: 'nowrap',
-        // verticalAlign: 'middle',
         verticalAlign: 'baseline',
         opacity: .5,
-        // color: colors.lighten[3]
       },
       input: {
         fontSize: 16,

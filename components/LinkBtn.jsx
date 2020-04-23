@@ -20,8 +20,8 @@ class LinkBtn extends React.Component {
       border: '1px solid',
       borderRadius: 2,
       color: props.active ? colors.blue : 'inherit',
-      backgroundColor: props.active ? colors.darken[3] : 'transparent',
-      borderColor: props.active ? 'transparent' : colors.darken[3],
+      backgroundColor: props.active ? colors.darken : 'transparent',
+      borderColor: props.active ? 'transparent' : colors.darken,
       cursor: 'pointer'
     }
 

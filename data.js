@@ -1,6 +1,5 @@
 
 import commands from 'path-ast/lib/keys'
-import Color from 'color'
 import modular from 'simple-modular-scale'
 
 let scale = modular({
@@ -23,22 +22,7 @@ export default {
     cyan: 'cyan',
     blue: '#0cf',
     dark: '#222',
-    darken: [
-      Color('#000').alpha(1/16).rgbString(),
-      Color('#000').alpha(2/16).rgbString(),
-      Color('#000').alpha(3/16).rgbString(),
-      Color('#000').alpha(4/16).rgbString(),
-      Color('#000').alpha(5/16).rgbString(),
-      Color('#000').alpha(6/16).rgbString(),
-      Color('#000').alpha(7/16).rgbString(),
-      Color('#000').alpha(8/16).rgbString(),
-      Color('#000').alpha(9/16).rgbString(),
-    ],
-    lighten: [
-      Color('#fff').alpha(1/16).rgbString(),
-      Color('#fff').alpha(2/16).rgbString(),
-      Color('#fff').alpha(3/16).rgbString(),
-      Color('#fff').alpha(4/16).rgbString(),
-    ]
+    darken: 'rgba(0, 0, 0, 0.25)', 
+    lighten: 'rgba(255, 255, 255, 0.25)',
   }
 }

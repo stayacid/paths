@@ -10,7 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "babel-loader": "^5.3.1",
-    "color": "^0.10.1",
     "css-loader": "^0.15.2",
     "cssnext-loader": "^1.0.1",
     "json-loader": "^0.5.2",

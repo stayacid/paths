@@ -81,7 +81,7 @@ class Command extends React.Component {
   render () {
     let self = this
     const { props } = this
-    const { command, current, index, scale, colors, snap, resolution } = props
+    const { command, current, index, colors, snap, resolution } = props
     const options = Object.keys(commands)
       .filter(function (key) {
         return key.match(/[A-Z]/)
@@ -101,7 +101,7 @@ class Command extends React.Component {
 
     let s = {
       div: {
-        marginBottom: scale[1],
+        marginBottom: 9,
         color: active ? colors.blue : 'inherit'
       },
       cell: {

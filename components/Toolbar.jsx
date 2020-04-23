@@ -6,7 +6,6 @@ import LinkBtn from './LinkBtn.jsx'
 import Table from './Table.jsx'
 import Stepper from './Stepper.jsx'
 import Spacer from './Spacer.jsx'
-import { scale } from '../data'
 
 class Toolbar extends React.Component {
 
@@ -35,7 +34,7 @@ class Toolbar extends React.Component {
 
     let s = {
       container: {
-        padding: scale[1],
+        padding: 9,
       },
       text: {
         fontSize: 14,

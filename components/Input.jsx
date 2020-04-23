@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { scale, colors } from '../data'
+import { colors } from '../data'
 
 class Input extends React.Component {
 
@@ -21,7 +21,7 @@ class Input extends React.Component {
         fontSize: 16,
         fontFamily: 'inherit',
         width: '100%',
-        height: scale[6],
+        height: 32,
         paddingLeft: 8,
         paddingRight: 8,
         boxSizing: 'border-box',

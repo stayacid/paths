@@ -1,6 +1,5 @@
 
 import React from 'react'
-import scale from '../data'
 import Button from './Button.jsx'
 
 class Stepper extends React.Component {
@@ -44,7 +43,7 @@ class Stepper extends React.Component {
         lineHeight: 1,
         paddingTop: 0,
         paddingBottom: 0,
-        width: scale[6],
+        width: 32,
         borderRadius: [radius, 0, 0, radius].join(' '),
         opacity: disabled.left ? .5 : null
       },
@@ -53,7 +52,7 @@ class Stepper extends React.Component {
         lineHeight: 1,
         paddingTop: 0,
         paddingBottom: 0,
-        width: scale[6],
+        width: 32,
         marginLeft: -1,
         borderRadius: [0, radius, radius, 0].join(' '),
         opacity: disabled.right ? .5 : null

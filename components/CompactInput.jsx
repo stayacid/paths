@@ -1,6 +1,5 @@
 
 import React from 'react'
-import { scale } from '../data'
 
 class CompactInput extends React.Component {
 
@@ -32,7 +31,7 @@ class CompactInput extends React.Component {
         display: 'table-cell',
         verticalAlign: 'baseline',
         width: '100%',
-        height: scale[6],
+        height: 32,
         paddingLeft: 0,
         paddingRight: 8,
         boxSizing: 'border-box',

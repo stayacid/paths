@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { scale, colors } from '../data'
+import { colors } from '../data'
 
 class LinkBtn extends React.Component {
 
@@ -12,10 +12,10 @@ class LinkBtn extends React.Component {
       fontWeight: 'bold',
       fontFamily: 'inherit',
       textDecoration: 'none',
-      lineHeight: (scale[6] - 2 * scale[1]) + 'px',
-      height: scale[6],
+      lineHeight: (32 - 2 * 9) + 'px',
+      height: 32,
       margin: 0,
-      padding: scale[1],
+      padding: 9,
       boxSizing: 'border-box',
       border: '1px solid',
       borderRadius: 2,

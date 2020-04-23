@@ -32,7 +32,7 @@ class Commands extends React.Component {
 
   render () {
     let props = this.props
-    let { ast, styles, scale, colors } = props
+    let { ast } = props
     let code = pathast.stringify(roundAst(props.ast, 2))
 
     let coms = ast.commands.map(function(com) {
@@ -52,7 +52,7 @@ class Commands extends React.Component {
       container: {
         position: 'relative',
         boxSizing: 'border-box',
-        paddingTop: scale[3],
+        paddingTop: 16,
         paddingBottom: 128,
         flex: '0 0 40%'
       },
@@ -88,7 +88,7 @@ class Commands extends React.Component {
             })}
           </div>
           <div style={{
-              padding: scale[3]
+              padding: 16
             }}>
             <Button onClick={this.addPoint}
               style={{

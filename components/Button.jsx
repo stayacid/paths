@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { assign } from 'lodash'
-import { scale, colors } from '../data'
+import { colors } from '../data'
 
 class Button extends React.Component {
 
@@ -12,10 +12,10 @@ class Button extends React.Component {
       fontSize: 14,
       fontWeight: 'bold',
       fontFamily: 'inherit',
-      lineHeight: (scale[6] - 2 * scale[1]) + 'px',
-      height: scale[6],
+      lineHeight: (32 - 2 * 9) + 'px',
+      height: 32,
       margin: 0,
-      padding: scale[1],
+      padding: 9,
       boxSizing: 'border-box',
       border: 0,
       color: props.active ? colors.blue : 'inherit',

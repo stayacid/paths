@@ -5,7 +5,6 @@ class Select extends React.Component {
 
   render () {
     let props = this.props
-    let { scale } = props
     let s = {
       div: {
         marginBottom: props.mb ? 12 : null
@@ -20,9 +19,9 @@ class Select extends React.Component {
         fontSize: 14,
         fontFamily: 'inherit',
         width: '100%',
-        height: scale[6],
-        paddingLeft: scale[1],
-        paddingRight: scale[1],
+        height: 32,
+        paddingLeft: 9,
+        paddingRight: 9,
         boxSizing: 'border-box',
         border: 0,
         boxShadow: 'none',

@@ -1,5 +1,5 @@
 
-import React from 'react'
+/*import React from 'react'
 import { scale } from '../data'
 
 class Pad extends React.Component {
@@ -24,3 +24,4 @@ class Pad extends React.Component {
 
 export default Pad
 
+*/

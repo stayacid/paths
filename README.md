@@ -133,7 +133,6 @@ Open <http://localhost:8080>
 
 - [Building SVG Icons with React](http://jxnblk.com/react-icons/)
 - [Geomicons Open](http://geomicons.com) - hand-coded SVG icons
-- blk - style guide
 
 ---
 

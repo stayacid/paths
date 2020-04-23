@@ -1,11 +1,5 @@
 
-import commands from 'path-ast/lib/keys'
-import modular from 'simple-modular-scale'
-
-let scale = modular({
-  base: 8,
-  ratios: [9/8, 4/3, 4/3]
-})
+import commands from 'path-ast/lib/keys';
 
 export default {
   title: 'Paths',
@@ -14,10 +8,6 @@ export default {
       return key.match(/[A-Z]/)
     }),
   padding: 8,
-  scale: scale,
-  styles: {
-    pad: scale
-  },
   colors: {
     cyan: 'cyan',
     blue: '#0cf',

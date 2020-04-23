@@ -1,6 +1,5 @@
 
 import React from 'react'
-import { scale } from '../data'
 
 class Table extends React.Component {
 
@@ -8,8 +7,8 @@ class Table extends React.Component {
     let props = this.props
     let s = {
       outer: {
-        marginLeft: props.pad ? -scale[0] : 0,
-        marginRight: props.pad ? -scale[0] : 0,
+        marginLeft: props.pad ? -8 : 0,
+        marginRight: props.pad ? -8 : 0,
         marginBottom: props.mb ? 8 : null
       },
       inner: {
@@ -42,8 +41,8 @@ class Cell extends React.Component {
       verticalAlign: 'middle',
       whiteSpace: 'nowrap',
       width: props.fill ? '100%' : null,
-      paddingLeft: props.pad ? scale[0] : 0,
-      paddingRight: props.pad ? scale[0] : 0,
+      paddingLeft: props.pad ? 8 : 0,
+      paddingRight: props.pad ? 8 : 0,
     }
     return (
       <div style={s}>

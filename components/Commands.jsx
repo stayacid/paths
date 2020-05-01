@@ -76,7 +76,7 @@ class Commands extends React.Component {
           <div>
             {coms.map(function (com, i) {
               if (!com.params.length) {
-                // return false
+                return false
               }
               return (
                 <Command

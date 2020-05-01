@@ -87,7 +87,7 @@ class App extends React.Component {
   }
 
   handleKeyDown (e) {
-    if (e.metaKey && e.keyCode === 90) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'z') {
       e.preventDefault()
       this.undo()
     }
@@ -113,7 +113,8 @@ class App extends React.Component {
             updateAst={this.updateAst}
             selectPoint={this.selectPoint}
             updateState={this.updateState}
-            handleChange={this.handleChange} />
+            handleChange={this.handleChange} // not used
+            /> 
           <Commands
               {...props}
               {...state}

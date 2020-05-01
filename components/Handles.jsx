@@ -7,15 +7,15 @@ import { colors } from '../data'
 import Anchor from './Anchor'
 import CurrentAnchor from './CurrentAnchor'
 import CurveHandles from './CurveHandles'
+import PathHandles from './PathHandles'
 
 class Handles extends React.Component {
 
   constructor () {
     super ()
-    this.handleMouseDown = this.handleMouseDown.bind(this)
+    //this.handleMouseDown = this.handleMouseDown.bind(this)
     this.handleMouseUp = this.handleMouseUp.bind(this)
     this.handleMouseMove = this.handleMouseMove.bind(this)
-    this.handleMouseLeave = this.handleMouseLeave.bind(this)
     this.handleAddPoint = this.handleAddPoint.bind(this)
     this.handleKeyDown = this.handleKeyDown.bind(this)
     this.handleTranslate = this.handleTranslate.bind(this)
@@ -35,18 +35,7 @@ class Handles extends React.Component {
     })
   }
 
-  handleMouseUp (e) {
-    const { updateState } = this.props
-    updateState({
-      isPointMoving: false,
-      isTranslating: false,
-      isScaling: false,
-      transformParams: false,
-      transformStart: false
-    })
-  }
-
-  handleMouseLeave (e) {
+  handleMouseUp () {
     const { updateState } = this.props
     updateState({
       isPointMoving: false,
@@ -252,7 +241,7 @@ class Handles extends React.Component {
     const { props } = this
     const { ast, current, zoom, preview, selected } = this.props
     let newAst = cloneDeep(ast)
-    const q3 = 32 / zoom
+    // const q3 = 32 / zoom
 
     const d = stringify(ast)
 
@@ -339,10 +328,11 @@ class Handles extends React.Component {
     }
 
     return (
-      <g style={styles.g}
+      <g id="handles" 
+        style={styles.g}
         onKeyDown={this.handleKeyDown}
         onMouseUp={this.handleMouseUp}
-        onMouseLeave={this.handleMouseLeave}>
+        onMouseLeave={this.handleMouseUp}>
 
         <rect
           transform={'translate(' + -props.padding + ' ' + -props.padding + ')'}
@@ -352,13 +342,13 @@ class Handles extends React.Component {
           onMouseUp={this.handleMouseUp}
           onMouseMove={this.handleMouseMove}
         />
-        <rect
+        {/*<rect
           width={props.width}
           height={props.height}
           style={styles.mouseRect}
           onMouseMove={this.handleMouseMove}
           onMouseUp={this.handleMouseUp}
-        />
+        /> have no idea why is it here*/ }
 
         <path d={d}
           style={styles.path}
@@ -394,15 +384,13 @@ class Handles extends React.Component {
           )
         })}
 
-        {/*
-        {selected && (
+        {/*selected && (
           <PathHandles {...props}
             handleScale={this.handleScale}
             handleMouseMove={this.handleMouseMove}
             handleMouseUp={this.handleMouseUp}
           />
-          )}
-        */}
+        )*/}
 
         <CurrentAnchor
           {...props}
@@ -415,7 +403,8 @@ class Handles extends React.Component {
           {...props}
           onMouseDown={this.handleMouseDown}
           onMouseMove={this.handleMouseMove}
-          onMouseUp={this.handleMouseUp} />
+        onMouseUp={this.handleMouseUp} />
+
       </g>
     )
 
